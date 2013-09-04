@@ -32,3 +32,11 @@ Here are the requirements for the app:
 - Complete a pomodoro
 - Abandon a pomodoro
 - Tell you how many pomodoros you've completed today
+
+### Teams
+
+#### Mando Escamilla & Theo Mills: Ember Persistence Foundation
+
+#### Jeffrey Biles & ???: Plain AJAX or Ember-REST (???)
+
+#### Stanley Stuart & Brandon Hays: Ember Model (or if ready, Ember Data)
