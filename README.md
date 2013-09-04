@@ -24,11 +24,11 @@ The timer is out of scope for this task, you'll have to use the clock to track y
 
 Here are the requirements for the app:
 
-- [ ] Add a task
-- [ ] Delete a task
-- [ ] Mark a task as complete (cross it off the list)
-- [ ] Add an estimate (# of pomodoros) to a task
-- [ ] Change (increment/decrement) the estimated number of pomodoros for a task
-- [ ] Complete a pomodoro
-- [ ] Abandon a pomodoro
-- [ ] Tell you how many pomodoros you've completed today
+- Add a task
+- Delete a task
+- Mark a task as complete (cross it off the list)
+- Add an estimate (# of pomodoros) to a task
+- Change (increment/decrement) the estimated number of pomodoros for a task
+- Complete a pomodoro
+- Abandon a pomodoro
+- Tell you how many pomodoros you've completed today
