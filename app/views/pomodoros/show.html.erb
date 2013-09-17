@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @pomodoro.status %>
+</p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @pomodoro.task_id %>
+</p>
+
+<p>
+  <strong>Started at:</strong>
+  <%= @pomodoro.started_at %>
+</p>
+
+<p>
+  <strong>Completed at:</strong>
+  <%= @pomodoro.completed_at %>
+</p>
+
+<%= link_to 'Edit', edit_task_pomodoro_path(@task, @pomodoro) %> |
+<%= link_to 'Back', task_pomodoros_path(@task) %>

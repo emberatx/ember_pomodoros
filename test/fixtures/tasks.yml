@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  estimate: 1
+  status: MyString
+
+two:
+  name: MyString
+  estimate: 1
+  status: MyString
