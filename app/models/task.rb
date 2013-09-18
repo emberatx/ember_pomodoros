@@ -1,4 +1,7 @@
 class Task < ActiveRecord::Base
+
+  before_save :check_completed_status
+
   STATUSES = {
     not_started: "not_started",
     in_progress: "in_progress",
@@ -21,28 +24,18 @@ class Task < ActiveRecord::Base
     pomodoros.where(status: Pomodoro::STATUSES[:abandoned])
   end
 
-  def increment_estimate!
-    self.estimate += 1
-    self.save!
-  end
-
-  def decrement_estimate!
-    self.estimate -= 1
-    self.save!
-  end
-
   def completed?
     completed_at.present?
   end
 
-  def complete
-    self.completed_at = Time.now
-    self.status = STATUSES[:completed]
-    self.save
-  end
-
-  def archive!
-    self.status = STATUSES[:archived]
-    self.save!
+  private
+  def check_completed_status
+    if self.status_changed?
+      if self.status == "completed"
+        self.completed_at = Time.now
+      else
+        self.completed_at = nil
+      end
+    end
   end
 end

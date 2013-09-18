@@ -1,0 +1,1 @@
+App.TasksController = Ember.ArrayController.extend()

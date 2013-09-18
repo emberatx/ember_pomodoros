@@ -12,5 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require handlebars
+//= require ember
+//= require ember-model
+//= require_self
+//= require ember_pomodoros
+
+// for more details see: http://emberjs.com/guides/application/
+App = Ember.Application.create();
+
 //= require_tree .

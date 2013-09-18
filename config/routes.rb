@@ -1,10 +1,12 @@
 EmberPomodoros::Application.routes.draw do
 
-  get "home/index"
-  resources :tasks do
-    resources :pomodoros
+  namespace :api do
+    resources :tasks do
+      resources :pomodoros
+    end
   end
 
+  match "/*path" => "home#index", via: %w(get post)
   root 'home#index'
 
   # Example of regular route:
